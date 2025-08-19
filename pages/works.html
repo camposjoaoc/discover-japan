@@ -1,109 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles and Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="../css/index.css">
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <script src="../scripts/navbar-script-menu.js" defer></script>
     <!--FAV ico and PageTitle-->
-    <link rel="icon" type="image/png" href="../img/img-fav-icon.png">
+    <link rel="icon" type="image/png" href="../img/img-fav-icon.png" />
     <title>Works</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Navigation bar container -->
-        <nav class="navbar">
-            <!-- Website title that redirects to the homepage when clicked -->
-            <div class="navbar-title" onclick="window.location.href='../index.html'">Head.</div>
-            <!-- List of navigation links for desktop view -->
-            <ul class="nav-links-desktop">
-                <li><a href="../pages/works.html">Works</a></li>
-                <li><a href="../pages/services.html">Services</a></li>
-                <li><a href="../pages/contacts.html">Contacts</a></li>
-            </ul>
-            <!-- Mobile menu container -->
-            <div class="mobile-menu" id="mobileMenu">
-                <!-- Close button for the mobile menu -->
-                <button class="close" id="closeButton">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <!-- List of navigation links for mobile view -->
-                <ul class="nav-links-mobile">
-                    <li><a href="../pages/works.html">Works</a></li>
-                    <li><a href="../pages/services.html">Services</a></li>
-                    <li><a href="../pages/contacts.html">Contacts</a></li>
-                </ul>
-            </div>
-            <!-- Button to open the mobile menu (hamburger icon) -->
-            <button class="hamburger" id="hamburgerButton">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
+      <!-- Navigation bar container -->
+      <nav class="navbar">
+        <!-- Website title that redirects to the homepage when clicked -->
+        <div
+          class="navbar-title"
+          onclick="window.location.href='../index.html'"
+        >
+          Discover Japan
+        </div>
+        <!-- List of navigation links for desktop view -->
+        <ul class="nav-links-desktop">
+          <li><a href="../pages/works.html">Works</a></li>
+          <li><a href="../pages/services.html">Services</a></li>
+          <li><a href="../pages/contacts.html">Contacts</a></li>
+        </ul>
+        <!-- Mobile menu container -->
+        <div class="mobile-menu" id="mobileMenu">
+          <!-- Close button for the mobile menu -->
+          <button class="close" id="closeButton">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <!-- List of navigation links for mobile view -->
+          <ul class="nav-links-mobile">
+            <li><a href="../pages/works.html">Works</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+        <!-- Button to open the mobile menu (hamburger icon) -->
+        <button class="hamburger" id="hamburgerButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
     </header>
     <main>
-        <!-- Main content area for the page -->
-        <section class="container">
-            <!-- Title section with animated class for the main heading -->
-            <div>
-                <h1 class="main-title animate__animated animate__fadeIn">Works</h1>
-            </div>
-            <!-- Section for introductory text in Japanese -->
-            <div>
-                <p class="main-info">明日死ぬかもしれないなら、今日を楽しく生きなさい</p>
-                <!-- Translation: "If you might die tomorrow, live happily today" -->
-            </div>
-            <!-- Image container that holds different image resolutions for responsive design -->
-            <div class="img-resolution right-container">
-                <!-- Image for desktop screen resolution -->
-                <img src="../img/img-desktop-fuji.jpg" class="image desktop-screen" alt="Mount Fuji">
-                <!-- Image for tablet screen resolution -->
-                <img src="../img/img-tablet-fuji.jpg" class="image tablet-screen" alt="Mount Fuji">
-                <!-- Image for mobile screen resolution -->
-                <img src="../img/img-mobile-fuji.jpg" class="image mobile-screen" alt="Mount Fuji">
-            </div>
-            <!-- Additional information in Japanese -->
-            <div>
-                <p class="main-info">は外国人と企業をつなぐプラットホームです。外国人の仕事さがしのための多言語求人サイトを運営する他、外国人が日本での生活するために必要なサービスへの.</p>
-                <!-- This text describes a platform that connects foreigners with companies and provides multilingual job listings for foreigners looking for work in Japan -->
-            </div>
-            <!-- Additional descriptive information in English -->
-            <div>
-                <p class="main-info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra
-                    eleifend
-                    lacus, vitae ullamcor.</p>
-                <!-- This paragraph provides placeholder text commonly used for design and layout (Latin placeholder text) -->
-            </div>
-        </section>
+      <!-- Main content area for the page -->
+      <section class="container">
+        <!-- Title section with animated class for the main heading -->
+        <div>
+          <h1 class="main-title animate__animated animate__fadeIn">Works</h1>
+        </div>
+        <!-- Section for introductory text in Japanese -->
+        <div>
+          <p class="main-info">
+            明日死ぬかもしれないなら、今日を楽しく生きなさい
+          </p>
+          <!-- Translation: "If you might die tomorrow, live happily today" -->
+        </div>
+        <!-- Image container that holds different image resolutions for responsive design -->
+        <div class="img-resolution right-container">
+          <!-- Image for desktop screen resolution -->
+          <img
+            src="../img/img-desktop-fuji.jpg"
+            class="image desktop-screen"
+            alt="Mount Fuji"
+          />
+          <!-- Image for tablet screen resolution -->
+          <img
+            src="../img/img-tablet-fuji.jpg"
+            class="image tablet-screen"
+            alt="Mount Fuji"
+          />
+          <!-- Image for mobile screen resolution -->
+          <img
+            src="../img/img-mobile-fuji.jpg"
+            class="image mobile-screen"
+            alt="Mount Fuji"
+          />
+        </div>
+        <!-- Additional information in Japanese -->
+        <div>
+          <p class="main-info">
+            は外国人と企業をつなぐプラットホームです。外国人の仕事さがしのための多言語求人サイトを運営する他、外国人が日本での生活するために必要なサービスへの.
+          </p>
+          <!-- This text describes a platform that connects foreigners with companies and provides multilingual job listings for foreigners looking for work in Japan -->
+        </div>
+        <!-- Additional descriptive information in English -->
+        <div>
+          <p class="main-info">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcor.
+          </p>
+          <!-- This paragraph provides placeholder text commonly used for design and layout (Latin placeholder text) -->
+        </div>
+      </section>
     </main>
     <!-- Footer section with copyright and social media links -->
     <footer>
-        <div class="footer-content">
-            <!-- Copyright information -->
-            <p>&copy; 2024 Head. All rights reserved.</p>
-            <!-- Social media icon links -->
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
+      <div class="footer-content">
+        <!-- Copyright information -->
+        <p>&copy; 2024 Head. All rights reserved.</p>
+        <!-- Social media icon links -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

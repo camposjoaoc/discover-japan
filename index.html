@@ -1,103 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Styles and Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/index.css">
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="./scripts/navbar-script-menu.js" defer></script>
     <!--FAV ico and PageTitle-->
-    <link rel="icon" type="image/png" href="../img/img-fav-icon.png">
-    <title>Head.</title>
-</head>
+    <link rel="icon" type="image/png" href="../img/img-fav-icon.png" />
+    <title>Discover Japan</title>
+  </head>
 
-<body>
-        <!-- Header section starts here -->
-        <header>
-            <!-- Navigation bar -->
-            <nav class="navbar">
-                <!-- Website title that redirects to the homepage when clicked -->
-                <div class="navbar-title" onclick="window.location.href='../index.html'">Head.</div>
-                <!-- Desktop navigation links -->
-                <ul class="nav-links-desktop">
-                    <li><a href="./pages/works.html">Works</a></li>
-                    <li><a href="./pages/services.html">Services</a></li>
-                    <li><a href="./pages/contacts.html">Contacts</a></li>
-                </ul>
-                <!-- Mobile menu for smaller screens -->
-                <div class="mobile-menu" id="mobileMenu">
-                    <!-- Close button for the mobile menu -->
-                    <button class="close" id="closeButton">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <!-- Mobile navigation links -->
-                    <ul class="nav-links-mobile">
-                        <li><a href="./pages/works.html">Works</a></li>
-                        <li><a href="./pages/services.html">Services</a></li>
-                        <li><a href="./pages/contacts.html">Contacts</a></li>
-                    </ul>
-                </div>
-                <!-- Hamburger button to open the mobile menu -->
-                <button class="hamburger" id="hamburgerButton">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </nav>
-        </header>
-        <!-- Main content section starts here -->
-        <main>
-            <section class="container">
-                <!-- Main title with fade-in animation -->
-                <div>
-                    <h1 class="main-title animate__animated animate__fadeIn">Japan</h1>
-                </div>
-                <!-- Main paragraph with a brief description of the content -->
-                <div>
-                    <p class="main-info">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra
-                        eleifend lacus, vitae ullamcor.</p>
-                </div>
-                <!-- Container for responsive images that change based on screen resolution -->
-                <div class="img-resolution">
-                    <!-- Image for desktop screens -->
-                    <img src="../img/img-desktop-fuji.jpg" class="image desktop-screen" alt="Mount Fuji">
-                    <!-- Image for tablet screens -->
-                    <img src="../img/img-tablet-fuji.jpg" class="image tablet-screen" alt="Mount Fuji">
-                    <!-- Image for mobile screens -->
-                    <img src="../img/img-mobile-fuji.jpg" class="image mobile-screen" alt="Mount Fuji">
-                </div>
-                <!-- Additional paragraph with a phrase in Japanese -->
-                <div>
-                    <div>
-                        <p class="main-info">明日死ぬかもしれないなら、今日を楽しく生きなさい</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer section starts here -->
-        <footer>
-            <div class="footer-content">
-                <!-- Copyright notice -->
-                <p>&copy; 2024 Head. All rights reserved.</p>
-                <!-- Social media icons with links to platforms -->
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i
-                            class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
-                            class="fa-brands fa-twitter"></i></a>
-                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </footer>
-    </body>
+  <body>
+    <!-- Header section starts here -->
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar">
+        <!-- Website title that redirects to the homepage when clicked -->
+        <div
+          class="navbar-title"
+          onclick="window.location.href='../index.html'"
+        >
+          Discover Japan
+        </div>
+        <!-- Desktop navigation links -->
+        <ul class="nav-links-desktop">
+          <li><a href="./pages/works.html">Works</a></li>
+          <li><a href="./pages/services.html">Services</a></li>
+          <li><a href="./pages/contacts.html">Contacts</a></li>
+        </ul>
+        <!-- Mobile menu for smaller screens -->
+        <div class="mobile-menu" id="mobileMenu">
+          <!-- Close button for the mobile menu -->
+          <button class="close" id="closeButton">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <!-- Mobile navigation links -->
+          <ul class="nav-links-mobile">
+            <li><a href="./pages/works.html">Works</a></li>
+            <li><a href="./pages/services.html">Services</a></li>
+            <li><a href="./pages/contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+        <!-- Hamburger button to open the mobile menu -->
+        <button class="hamburger" id="hamburgerButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- Main content section starts here -->
+    <main>
+      <section class="container">
+        <!-- Main title with fade-in animation -->
+        <div>
+          <h1 class="main-title animate__animated animate__fadeIn">Japan</h1>
+        </div>
+        <!-- Main paragraph with a brief description of the content -->
+        <div>
+          <p class="main-info">
+            Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec
+            viverra eleifend lacus, vitae ullamcor.
+          </p>
+        </div>
+        <!-- Container for responsive images that change based on screen resolution -->
+        <div class="img-resolution">
+          <!-- Image for desktop screens -->
+          <img
+            src="../img/img-desktop-fuji.jpg"
+            class="image desktop-screen"
+            alt="Mount Fuji"
+          />
+          <!-- Image for tablet screens -->
+          <img
+            src="../img/img-tablet-fuji.jpg"
+            class="image tablet-screen"
+            alt="Mount Fuji"
+          />
+          <!-- Image for mobile screens -->
+          <img
+            src="../img/img-mobile-fuji.jpg"
+            class="image mobile-screen"
+            alt="Mount Fuji"
+          />
+        </div>
+        <!-- Additional paragraph with a phrase in Japanese -->
+        <div>
+          <div>
+            <p class="main-info">
+              明日死ぬかもしれないなら、今日を楽しく生きなさい
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section starts here -->
+    <footer>
+      <div class="footer-content">
+        <!-- Copyright notice -->
+        <p>&copy; 2024 Head. All rights reserved.</p>
+        <!-- Social media icons with links to platforms -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,51 +1,59 @@
 /* Default image container settings */
 .img-resolution {
-    width: 100%; /* Full-width for responsiveness */
-    background-size: cover; /* Image scales to cover the element */
-    background-position: center; /* Centers the image */
+  width: 100%; /* Full-width for responsiveness */
+  background-size: cover; /* Image scales to cover the element */
+  background-position: center; /* Centers the image */
 }
 
-.image{
-    display: none;
+.image {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
-    .desktop-screen {
-        height: 60vh; /* Set height to 60% of the viewport */
-        display: block;
-        width: 100%;
-    }
+  .desktop-screen {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+  }
 }
 
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .tablet-screen {
-        height: 50vh; /* Set height to 50% of the viewport */
-        display: block;
-        width: 100%;
-    }
-    .main-title {
-        font-size: 4.5rem !important; /* Smaller title font for tablets */
-    }
-    .main-info {
-        font-size: 1.38rem !important; /* Adjust info text size for tablets */
-        width: 60vw !important; /* Increase text width for readability */
-    }
+  .tablet-screen {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: cover;
+  }
+  .main-title {
+    font-size: 4.5rem !important; /* Smaller title font for tablets */
+  }
+  .main-info {
+    font-size: 1.38rem !important; /* Adjust info text size for tablets */
+    width: 60vw !important; /* Increase text width for readability */
+  }
 }
 
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
-    .mobile-screen {
-        height: 40vh; /* Set height to 40% of the viewport */
-        display: block;
-        width: 100%;
-    }
-    .main-title {
-        font-size: 3.25rem !important; /* Smaller font size for mobile */
-    }
-    .main-info {
-        font-size: 0.75rem !important; /* Smaller info text for mobile */
-        width: 60vw !important; /* Maintain readability with increased width */
-    }
+  .mobile-screen {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+  }
+  .main-title {
+    font-size: 3.25rem !important; /* Smaller font size for mobile */
+  }
+  .main-info {
+    font-size: 0.75rem !important; /* Smaller info text for mobile */
+    width: 60vw !important; /* Maintain readability with increased width */
+  }
 }

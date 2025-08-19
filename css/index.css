@@ -14,11 +14,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; /* Space between title and links */
+  -ms-flex-pack: justify;
+  justify-content: space-between; /* Space between title and links */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Center items vertically */
+  -ms-flex-align: center;
+  align-items: center; /* Center items vertically */
   margin: 20px auto; /* Center navbar with outer margin */
   max-width: 80%; /* Maximum width for responsive layout */
   padding: 20px; /* Padding around navbar content */
@@ -77,11 +77,11 @@
   background-color: #000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* Vertical layout for links */
+  -ms-flex-direction: column;
+  flex-direction: column; /* Vertical layout for links */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Center align items */
+  -ms-flex-align: center;
+  align-items: center; /* Center align items */
   font-size: 1.45rem; /* Font size for mobile links */
   z-index: 5; /* Layer above other content */
 }
@@ -93,8 +93,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* Stack items vertically */
+  -ms-flex-direction: column;
+  flex-direction: column; /* Stack items vertically */
   text-align: center; /* Center text */
   gap: 1.2rem; /* Space between links */
   width: 50%; /* Width of link area */
@@ -122,8 +122,8 @@
 /* Close button for mobile menu: positioned in top-right corner */
 .close {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   margin-top: 20px;
   margin-right: 20px;
   display: block; /* Show close button */
@@ -161,11 +161,11 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* Stack items vertically */
+  -ms-flex-direction: column;
+  flex-direction: column; /* Stack items vertically */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Center items horizontally */
+  -ms-flex-align: center;
+  align-items: center; /* Center items horizontally */
   text-align: center; /* Center-align text */
 }
 
@@ -210,22 +210,28 @@ footer {
 
 .image {
   display: none;
+  width: 100%; /* Ensure full width of container */
+  height: auto; /* Preserve natural aspect ratio */
 }
 
 /* Desktop styles: large screens (min-width: 1025px) */
 @media screen and (min-width: 1025px) {
   .desktop-screen {
-    height: 60vh; /* Set height to 60% of the viewport */
     display: block;
     width: 100%;
+    height: auto; /* Avoid distortion */
+    max-height: 60vh; /* Optional cap for very tall images */
+    object-fit: cover; /* Crop instead of stretch if max-height applies */
   }
 }
 /* Tablet styles: medium screens (768px to 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .tablet-screen {
-    height: 50vh; /* Set height to 50% of the viewport */
     display: block;
     width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: cover;
   }
   .main-title {
     font-size: 4.5rem !important; /* Smaller title font for tablets */
@@ -238,9 +244,11 @@ footer {
 /* Mobile styles: small screens (max-width: 767px) */
 @media screen and (max-width: 767px) {
   .mobile-screen {
-    height: 40vh; /* Set height to 40% of the viewport */
     display: block;
     width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
   }
   .main-title {
     font-size: 3.25rem !important; /* Smaller font size for mobile */
@@ -265,14 +273,14 @@ body {
   display: flex; /* Flex layout for easy alignment */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* Stack items vertically */
+  -ms-flex-direction: column;
+  flex-direction: column; /* Stack items vertically */
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; /* Center items vertically */
+  -ms-flex-pack: center;
+  justify-content: center; /* Center items vertically */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; /* Center items horizontally */
+  -ms-flex-align: center;
+  align-items: center; /* Center items horizontally */
   gap: 20px; /* Space between elements */
   margin: 20px auto; /* Center container with outer margin */
   max-width: 80%; /* Set maximum width for responsive scaling */
@@ -319,5 +327,5 @@ body {
   min-height: 60vh; /* Sets minimum height of the map to 60% of the viewport height */
   border: none; /* Removes any border from the iframe */
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%); /* Applies a grayscale filter to the map */
+  filter: grayscale(100%); /* Applies a grayscale filter to the map */
 }
